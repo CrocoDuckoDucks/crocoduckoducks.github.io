@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
-github_username:  crocoduckoducks
+github_username: crocoduckoducks
 
 # Build settings
 markdown: kramdown
@@ -42,4 +42,3 @@ plugins:
 
 # Google Analytics
 google_analytics: UA-142594496-1
-
