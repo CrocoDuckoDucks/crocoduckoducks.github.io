@@ -9,7 +9,6 @@ As part of my profession as an acoustician, I often make use of Open Source soft
 
 So let's first have a look ad the most important numerical simulation programs and technical computing languages that can be used to simulate acoustics. There are many programs out of there, but I mainly made use of ElmerFEM. ElmerFEM will be the focus of the series then, and we will look at how to set up Ubuntu 18.04 to be our workstation!
 
-<!--more-->
 <h1>The Ecosystem</h1>
 There is plenty of Open Source packages that are either designed to simulate acoustics, can simulate acoustic if one wants to, or can be used to simulate certain parts of multi-physics systems, or can be used for pre and post processing. Here few examples.
 <h3>Technical Computing Languages</h3>
@@ -35,6 +34,7 @@ These packages are suites for numerical modelling, using various methods.
 	<li><a href="http://mesh2hrtf.sourceforge.net/" target="_blank" rel="noopener">Mesh2HRTF</a> seems to a very interesting package for the numerical simulation of Head Related Transfer Functions (HRTF). Unfortunately, it has Matlab as a dependency. Still, this is pretty high in my must try list.</li>
 	<li><a href="http://www.signal.uu.se/Toolbox/dream/" target="_blank" rel="noopener">The DREAM Toolbox</a> is a Matlab/Octave toolbox for the simulation of ultrasonic speaker arrays.</li>
 	<li><a href="http://qucs.sourceforge.net/" target="_blank" rel="noopener">Qucs</a> is a nice, quite easy to use, circuit simulator. It can be used to simulate, of course, electronic circuits to use for audio applications, but it can also be used to build lumped acoustic models through electrical analogies (see <a href="https://en.wikibooks.org/wiki/Engineering_Acoustics/Electro-Mechanical_Analogies" target="_blank" rel="noopener">here</a>, for example).</li>
+	<li><a href="http://www.signal.uu.se/Toolbox/dream/index.shtml" target="_blank" rel="noopener">The DREAM Toolbox</a> and <a href="http://field-ii.dk//" target="_blank" rel="noopener">Field II</a> are two interesting open source Matlab/Octave toolboxes for the simulation of ultrasonic transducers, with focus on medical imaging applications (especially Field II).</li>
 </ul>
 There are actually few more solvers, such as <a href="http://www.calculix.de/" target="_blank" rel="noopener">Calculix</a>, <a href="https://code-aster.org/spip.php?rubrique2" target="_blank" rel="noopener">Code_Aster</a>, <a href="https://openfoam.org/" target="_blank" rel="noopener">OpenFOAM</a>, <a href="http://getfem.org/" target="_blank" rel="noopener">GetFEM++</a>, <a href="http://www.freefem.org/" target="_blank" rel="noopener">Freefem++</a> and <a href="http://onelab.info/" target="_blank" rel="noopener">ONELAB</a> but again I decided to stick with either those I tried, or those that are most relevant to acoustics.
 
@@ -65,40 +65,40 @@ But first, why Ubuntu? Well, it turns out that, even though Ubuntu is missing fe
 <h3>FreeCAD</h3>
 It is best to install from the <a href="https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-stable" target="_blank" rel="noopener">FreeCAD stable releases PPA</a>:
 
-[code language="bash"]
+{% highlight bash %}
 sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
 sudo apt-get update
 sudo apt-get install freecad
-[/code]
+{% endhighlight %}
 
 This should pull in the latest stable FreeCAD version. There is a not very outdated version in the official Ubuntu repos, but it does not seem to work on Ubuntu 18.04 at the time of writing.
 <h3>Salome</h3>
 To install Salome we should head to the <a href="http://www.salome-platform.org/downloads/current-version" target="_blank" rel="noopener">download page</a>. At the moment of writing there isn't a version for Ubuntu 18.04, but I tried the universal version and it seems to work fine after a cursory test. So, let's just download the universal binaries for Linux, and then let's open a terminal in the download folder. These commands should take care of the installation:
 
-[code language="bash"]
+{% highlight bash %}
 chmod +x Salome-V8_5_0-univ_public.run
 ./Salome-V8_5_0-univ_public.run
-[/code]
+{% endhighlight %}
 
 You might need to adapt the commands to match the filename of your download. The installer will ask a few questions. Answering the default by pressing enter worked just fine in my case.
 <h3>ElmerFEM</h3>
 ElmerFEM can be very conveniently installed from the <a href="https://launchpad.net/~elmer-csc-ubuntu/+archive/ubuntu/elmer-csc-ppa" target="_blank" rel="noopener">Ubuntu PPA</a> with these commands:
 
-[code language="bash"]
+{% highlight bash %}
 sudo apt-get install libqt5xml5
 sudo apt-add-repository ppa:elmer-csc-ubuntu/elmer-csc-ppa
 sudo apt-get update
 sudo apt-get install elmerfem-csc-eg
 sudo cp -rs /usr/share/ElmerGUI/edf-extra/* /usr/share/ElmerGUI/edf/
-[/code]
+{% endhighlight %}
 
 The last command is meant to create links to the various ElmerGUI elements that by default are not included in the GUI. It could be best to run it after each upgrade.
 <h3>Julia</h3>
 It is now time to install Julia. At the moment, there aren't official packages for Ubuntu 18.04, so let's follow the <a href="https://julialang.org/downloads/platform.html" target="_blank" rel="noopener">Julia installation tips</a> for generic Linux operating systems. Let's download the Linux binary from <a href="https://julialang.org/downloads/" target="_blank" rel="noopener">here</a>. Then extract the archive. I would suggest to do it in a reasonable folder, where you will not risk to remove Julia by mistake. Then, let's create a symbolic link to the Julia executable to a folder in the PATH variable. /usr/local/bin should be a good choice. In this example, I extracted the archive in my home folder, resulting in the folder julia-1.0.1:
 
-[code language="bash"]
+{% highlight bash %}
 sudo ln -fs ~/julia-1.0.1/bin/julia /usr/local/bin/julia
-[/code]
+{% endhighlight %}
 
 As above, you might need to adapt the command to reflect the extracted folder name for future versions. If you now issue the command "julia" to the terminal, you should be able to see the julia REPL. use exit() to quite Julia.
 <h1>Other Distributions?</h1>
