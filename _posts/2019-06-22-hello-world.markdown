@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2019-06-22 20:42:56 +0100
-categories: jekyll update
+categories: update
 ---
 First test post in my new GitHub blog.
 
