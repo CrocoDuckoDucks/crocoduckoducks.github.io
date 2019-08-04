@@ -2,7 +2,7 @@ title: The CrocoDuck's Pond
 email: crocoduck.oducks@gmail.com
 description: >-
   All about Linux, Open Source and Acoustics.
-baseurl: ""
+baseurl: "/"
 url: "https://crocoduckoducks.github.io/"
 
 # Build settings
@@ -13,6 +13,7 @@ plugins:
 
 header_pages:
   - bio.md
+  - publications.md
 
 minima:
   social_links:
