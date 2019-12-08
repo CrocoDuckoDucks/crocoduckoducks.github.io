@@ -121,7 +121,7 @@ search: indexGrid
 
 Next, for each point in the 3D grid we defined, we calculate the resonance frequency given by the coordinates of that point (which would be the mode numbers). For the sake of argument, let's choose:
 <ul>
-	<li>$$ L_x$$, $$ L_y$$ and $$ L_z$$ respectively equal to 5.0 meters, 4.0 meters and 3.0 meters.</li>
+	<li>The values of $$L_x$$, $$L_y$$ and $$L_z$$ respectively equal to 5.0 meters, 4.0 meters and 3.0 meters.</li>
 	<li>Let's assume air in equilibrium at room temperature and ordinary pressure, making for a speed of sound of 343 meters per second.</li>
 </ul>
 Hence, let's do:
@@ -194,7 +194,7 @@ julia> include("Example.jl")
 
 They should look like those below:
 
-![First Room Mode]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_2.gif  "First Room Mode")
+![First Room Mode]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_2.png  "First Room Mode")
 
 ![First Room Mode (Animated)]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_3.gif  "First Room Mode (Animated)")
 
