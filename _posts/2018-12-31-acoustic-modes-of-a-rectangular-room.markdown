@@ -120,10 +120,10 @@ search: indexGrid
 {% endhighlight %}
 
 Next, for each point in the 3D grid we defined, we calculate the resonance frequency given by the coordinates of that point (which would be the mode numbers). For the sake of argument, let's choose:
-<ul>
-	<li>The values of $$L_x$$, $$L_y$$ and $$L_z$$ respectively equal to 5.0 meters, 4.0 meters and 3.0 meters.</li>
-	<li>Let's assume air in equilibrium at room temperature and ordinary pressure, making for a speed of sound of 343 meters per second.</li>
-</ul>
+
++ The values of $$L_x$$, $$L_y$$ and $$L_z$$ respectively equal to 5.0 meters, 4.0 meters and 3.0 meters.
++ Let's assume air in equilibrium at room temperature and ordinary pressure, making for a speed of sound of 343 meters per second.
+
 Hence, let's do:
 
 {% highlight julia %}
