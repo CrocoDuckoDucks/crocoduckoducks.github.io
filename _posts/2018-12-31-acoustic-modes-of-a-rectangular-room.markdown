@@ -170,7 +170,7 @@ julia> histogram(G[G .< 4000], xlabel = "Frequency [Hz]", ylabel = "Number of Mo
 
 You should get a plot similar to this:
 
-![Modes Histogram]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_1.gif  "Modes Histogram")
+![Modes Histogram]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_1.png  "Modes Histogram")
 
 Let's commend this out, as it is telling us few interesting things.
 <ol>
