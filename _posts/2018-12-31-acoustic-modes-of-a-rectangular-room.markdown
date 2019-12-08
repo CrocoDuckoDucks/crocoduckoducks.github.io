@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is Acoustic Modelling"
+title:  "Acoustic Modes of a Rectangular Room"
 date:   2018-12-31 20:42:56 +0100
 categories: science physics opensource
 ---
@@ -170,7 +170,7 @@ julia> histogram(G[G .< 4000], xlabel = "Frequency [Hz]", ylabel = "Number of Mo
 
 You should get a plot similar to this:
 
-<img class="alignnone size-full wp-image-3408" src="{{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_1.png" alt="Modes Histogram" width="1920" height="946" />
+![Modes Histogram]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_1.gif  "Modes Histogram")
 
 Let's commend this out, as it is telling us few interesting things.
 <ol>
@@ -194,9 +194,9 @@ julia> include("Example.jl")
 
 They should look like those below:
 
-<img class="alignnone size-full wp-image-3409" src="{{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_2.png" alt="First Room Mode" width="1920" height="946" />
+![First Room Mode]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_2.gif  "First Room Mode")
 
-<img class="alignnone size-full wp-image-3410" src="{{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_3.gif" alt="First Room Mode (Animated)" width="600" height="400" />
+![First Room Mode (Animated)]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_3.gif  "First Room Mode (Animated)")
 
 So, what these two pictures represent?
 
@@ -245,7 +245,7 @@ julia> using Makie
 julia> contour(x, y, z, f, levels = 10, alpha = 0.1)
 {% endhighlight %}
 
-<img class="alignnone size-full wp-image-3412" src="{{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_4.png" alt="A Mode in 3D" width="960" height="540" />
+![A Mode in 3D]({{ site.baseurl }}/res/pictures/2018-12-31-acoustic-modes-of-a-rectangular-room/figure_4.png  "A Mode in 3D")
 
 A contour plot is a plot representing many 2D surfaces in a 3D volume. Each of these surface is drawn at a constant value of the pressure field, that is, on every little shell the pressure field is constant at a certain value.
 

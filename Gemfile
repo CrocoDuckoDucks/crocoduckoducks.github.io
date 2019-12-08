@@ -18,4 +18,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # For security reasons:
 gem "nokogiri", ">= 1.10.4"
+gem "rubyzip", ">= 1.3.0"
 
