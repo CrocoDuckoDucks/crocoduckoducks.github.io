@@ -14,6 +14,7 @@ plugins:
 header_pages:
   - bio.md
   - publications.md
+  - modeling-acoustics-with-open-source-software.md
 
 minima:
   social_links:
