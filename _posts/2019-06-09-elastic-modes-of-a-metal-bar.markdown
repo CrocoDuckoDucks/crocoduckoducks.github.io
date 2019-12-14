@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Elastic Modes of a Metal Bar"
-date:   2018-06-09 20:42:56 +0100
+date:   2019-06-09 20:42:56 +0100
 categories: science physics opensource
 ---
 
