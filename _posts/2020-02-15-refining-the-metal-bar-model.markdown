@@ -46,7 +46,7 @@ Also, as mentioned, note that it is not universal that hexahedral meshes are bet
 
 You can now follow along the previous episode's **Visualization and Post-processing** section to load the simulation results into ParaView and check them out. Let's compare the fifth eigenmode of our new solution with the fifth eigenmode of the previous solution.
 
-![Fifth Mode Comparison]({{ site.baseurl }}/res/pictures/2020-02-15-refining-the-metal-bar-model/figure_1.png  "Fifth Mode Comparison")
+![Fifth Mode Comparison]({{ site.baseurl }}/res/pictures/2020-02-15-refining-the-metal-bar-model/Figure_1.png  "Fifth Mode Comparison")
 
 Looks like we were successful! In our refined mesh results we do not see any nasty unexpected displacement field discontinuity, or dodgy bubbles in the middle of the domain, a sign that now that we have way more than 10 elements across the edges of the cross-section things are way more realistic.
 
