@@ -5,7 +5,7 @@ date:   2020-03-07 20:00:00 +0100
 categories: science physics opensource
 ---
 
-![FEM Model of a Spherical Source](https://raw.githubusercontent.com/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/paraview.png  "FEM Model of a Spherical Source")
+![FEM Model of a Spherical Source](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/paraview.png  "FEM Model of a Spherical Source")
 
 {% include mathjax.html %}
 
@@ -313,9 +313,9 @@ Both the coarse and fine mesh parameters outlined above produce meshes with size
 
 Pictures of the coarse and fine mesh are shown below. They are obtained with Salome. If you want to get similar views, just right click on your mesh in the 3D view and choose _Clipping_. A window will popup allowing to introduce any clipping plane you might like. Note that this clipping plane is for visualisation only, and does not affect the mesh. You can see that NETGEN meshes adapt their size where needed, and are finer where the curvature is higher (like in the centre).
 
-![Coarse Mesh](https://raw.githubusercontent.com/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/elmerfem_1/Mesh_1.png  "Coarse Mesh")
+![Coarse Mesh](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/elmerfem_1/Mesh_1.png  "Coarse Mesh")
 
-![Fine Mesh](https://raw.githubusercontent.com/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/elmerfem_2/Mesh_2.png  "Fine Mesh")
+![Fine Mesh](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/elmerfem_2/Mesh_2.png  "Fine Mesh")
 
 ## Solving
 It is finally the time to solve our study. For this study we will use a little more advanced feature of ElmerFEM, which is MATC expressions. MATC is a library for the evaluation of numerical expressions that is included with ElmerFEM. Its documentation is available [here](http://www.nic.funet.fi/pub/sci/physics/elmer/doc/MATCManual.pdf). With MATC it is possible to add flexibility to ElmerFEM and do all sorts of cool things, like parametric sweep studies or post-processing. You can run MATC expressions on the fields, at each solver iteration, but beware that MATC is pretty slow. It is best used to set up the simulation parameters, as we will do here.
@@ -466,11 +466,16 @@ There are tons of good things you can do with ParaView. A ParaView state is incl
 
 * From the top menu, select _Filters_.
 * Select _Alphabetical_ and then _Plot Over Line_.
-* In the _Line Parameters_, under the _Properties_ tab on the left, input the following values:
-  | Point1 | 0.005 | 0 | 0 |
-  | Point2 | 0.1   | 0 | 0 |
+* In the _Line Parameters_, under the _Properties_ tab on the left, input the values in the **line parameters** table below.
   This will make a radial line along the $$x$$ axis, extending from the source to the edge of the domain.
 * Click _Apply_. A new view will open showing a plot of all the fields in the _vtu_ file as a function of the position along the line.
+
+**Line Parameters Table**
+
+| Point  | x     | y     | z |
+|--------|-------|-------|---|
+| Point1 | 0.005 | 0     | 0 |
+| Point2 | 0.1   | 0     | 0 |
 
 This data can be exported. To do so, select the result of the _Plot Over Line_ filter from the _Pipeline Browser_ on the left. Then, click on _File_ from the top menu and choose _Save Data_. If you follow the steps below, you will be able to use the Julia code `validate.jl` to calculate the error between the fields sampled along the line with the theoretical expected values.
 
@@ -497,10 +502,10 @@ This will work only if Julia was open in the same directory as `validate.jl`.
 The script will produce a plot and hang after it displays it until `Enter` is pressed. It might take some time to run the code for the first time, as Julia will have to compile it. The plots show various metrics of error. I will present my results below.
 
 ### Coarse Mesh 
-![Coarse Mesh](https://raw.githubusercontent.com/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/errors_1.png  "Coarse Mesh")
+![Coarse Mesh](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/errors_1.png  "Coarse Mesh")
 
 ### Fine Mesh
-![Coarse Mesh](https://raw.githubusercontent.com/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/errors_2.png  "Coarse Mesh")
+![Coarse Mesh](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/errors_2.png  "Coarse Mesh")
 
 ### Discussion
 The error can be computed in few different ways. One way is to check the error of the complex numbers. We do this by subtracting the exact solution from the FEM solution. The results of this operation are shown in the 4 plots on the left side of the figures, as real, imaginary, magnitude and phase. We can see that overall the errors are always very small also for the coarse mesh. The real part of the error tends to grow with distance, while the imaginary part is more stable.
