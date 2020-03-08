@@ -97,7 +97,7 @@ When we think about acoustic wave propagation, two quantities are of interest. O
 <p style="text-align: center;">$$p=p\left(x,y,z,t\right)\in\mathbb{C}$$</p>
 <p style="text-align: center;">$$u=u\left(x,y,z,t\right)\in\mathbb{C}$$</p>
 
-Both the relationships above are valid for every $x$, $y$, $z$ and $t$. The amplitude and phase relationship between acoustic pressure and particle velocity is nontrivial, and depends on the nature of the source and domain, as in essence it depends on the field itself. To capture this relationship, one can define the specific acoustic impedance as follows:
+Both the relationships above are valid for every $$x$$, $$y$$, $$z$$ and $$t$$. The amplitude and phase relationship between acoustic pressure and particle velocity is nontrivial, and depends on the nature of the source and domain, as in essence it depends on the field itself. To capture this relationship, one can define the specific acoustic impedance as follows:
 
 <p style="text-align: center;">$$z=\frac{p}{u}$$</p>
 
