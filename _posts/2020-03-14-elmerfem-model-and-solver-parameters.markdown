@@ -5,9 +5,9 @@ date:   2020-03-07 20:00:00 +0100
 categories: science physics opensource
 ---
 
-{% include mathjax.html %}
-
 In the previous episodes we solved a few equations with ElmerFEM. We did some choices when we setup the solver parameters. What those parameters do, and how should we set them? This is perhaps the trickiest part in FEM (beside making the mesh right) and definitely the one I am the least expert about. Still, in this episode we will step back and look at those options more closely. This post is really not meant to be an exhaustive explanation. For that, refer to the [ElmerFEM documentation](http://www.elmerfem.org/blog/documentation/).
+
+{% include mathjax.html %}
 
 # Linear System and Nonlinear System
 

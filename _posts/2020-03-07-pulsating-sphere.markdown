@@ -7,11 +7,11 @@ categories: science physics opensource
 
 ![FEM Model of a Spherical Source](https://media.githubusercontent.com/media/CrocoDuckoDucks/Acoustic-Models/master/2020-03-07-pulsating-sphere/paraview.png  "FEM Model of a Spherical Source")
 
+In this episode we will build a model of a pulsating sphere source. The pulsating sphere source is an ideal source which forms the base for the development of point-sources. In essence, a point-source is a pulsating sphere in the limit of $$a$$, the radius of the sphere, approaching 0. For this reason, although abstract, the pulsating sphere is a very powerful theoretical tool that enables the study of point -sources which in turn, through integration and wave propagation principles, enable to study of any arbitrary acoustic field source.
+
 {% include mathjax.html %}
 
-In this episode we will build a model of a pulsating sphere source. The pulsating sphere source is an ideal source which forms the base for the development of point-sources. In essence, a point source is a pulsating sphere in the limit of $$a$$, the radius of the sphere, approaching 0. For this reason, although abstract, the pulsating sphere is a very powerful theoretical tool that enables the study of point -sources which in turn, through integration and wave propagation principles, enable to study of any arbitrary acoustic field source.
-
-In this episode we will study the point source radiating in infinite space in the domain of FEM analysis. Again, the study of simplified problems allows us to understand, through comparison with theory, how to tune our FEM problem to maximise accuracy. We will be then able to carry over this knowledge to more advanced problems.
+We will study the pulsating sphere source radiating in infinite space in the domain of FEM analysis. Again, the study of simplified problems allows us to understand, through comparison with theory, how to tune our FEM problem to maximise accuracy. We will be then able to carry over this knowledge to more advanced problems.
 
 Similarly to what done in previous episodes, we will:
 
