@@ -7,7 +7,7 @@ url: "https://crocoduckoducks.github.io/"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
