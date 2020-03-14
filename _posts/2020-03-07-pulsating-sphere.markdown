@@ -345,7 +345,7 @@ By referring to the Helmholtz model manual, we can see that the model allows two
 
 So, all we need to do is calculate this for $$r$$ equal to 0.1 meters (the radius at which our outer spherical boundary is placed) and use it as boundary condition. Since ElmerFEM requires the quantity to be input as a real-imaginary parts pair, here the same quantity but with the two parts separated:
 
-<p style="text-align: center;">$$Z\left(r\right)=c\frac{\left(kr\right)^{2}}{1+\left(kr\right)^{2}}+jc\frac{kr}{1+\left(kr\right)^{2}}$$</p>
+<p style="text-align: center;">$$Z\left(r\right)=c_{0}\frac{\left(kr\right)^{2}}{1+\left(kr\right)^{2}}+jc_{0}\frac{kr}{1+\left(kr\right)^{2}}$$</p>
 
 This is an expression we will evaluate with MATC.
 
