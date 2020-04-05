@@ -470,9 +470,9 @@ Where $$S$$ is the spatial part of the mode, and $$T%% is a cosine wave. Remembe
 
 <p style="text-align: center;">$$\overline{p}_{n}\left(x,y,z,t\right)=S_{n}\left(x,y,z\right)T_{n}\left(t\right)$$</p>
 
-Where $$S$$ and $$T$$ are given as follows:
+Where $$S$$ and $$T$$ are given as follows (note that $$S$$ is different with respect the [Acoustic Modes of a Rectangular Room](https://crocoduckoducks.github.io/science/physics/opensource/2018/12/31/acoustic-modes-of-a-rectangular-room.html) episode to account that the coordinate system is, in this episode, centred in the middle of the room rather than on a corner):
 
-<p style="text-align: center;">$$ S\left(x,y,z\right)=\cos\left(\frac{n_{x}\pi}{L_{x}}x\right)\cos\left(\frac{n_{y}\pi}{L_{y}}y\right)\cos\left(\frac{n_{z}\pi}{L_{z}}z\right)$$</p>
+<p style="text-align: center;">$$S\left(x,y,z\right)=\cos\left(n_{x}\pi\left[\frac{x}{L_{x}}+\frac{1}{2}\right]\right)\cos\left(n_{y}\pi\left[\frac{y}{L_{y}}+\frac{1}{2}\right]\right)\cos\left(n_{z}\pi\left[\frac{z}{L_{z}}+\frac{1}{2}\right]\right)$$</p>
 
 <p style="text-align: center;">$$T_{n}\left(t\right)=\cos\left(2\pi f_{n}t\right)$$</p>
 
