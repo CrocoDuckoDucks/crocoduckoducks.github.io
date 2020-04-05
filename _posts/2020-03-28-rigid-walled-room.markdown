@@ -165,6 +165,7 @@ Point 3 assumes that the response of the room, when driven exactly at a certain 
 The parameters of the room are reported below:
 
 ## Room Geometry
+
 | Name   | Symbol  | Value    |
 |--------|---------|----------|
 | Length | $$L_x$$ | 5 meters |
@@ -172,12 +173,14 @@ The parameters of the room are reported below:
 | Height | $$L_z$$ | 3 meters |
 
 ## Medium Properties
+
 |Parameter Name              | Symbol       | Value | Unit                      |
 |----------------------------|--------------|-------|---------------------------|
 | Medium Sound Phase Speed   | $$c_{0}$$    | 343   | meters per second         |
 | Medium Equilibrium Density | $$\rho_{0}$$ | 1.205 | kilograms per cubic meter |
 
 ## Sphere Source Parameters
+
 |Parameter Name               | Symbol       | Value                              | Unit   |
 |-----------------------------|--------------|------------------------------------|--------|
 | Source Radius               | $$a$$        | 0.005                              | meters |
