@@ -87,7 +87,7 @@ The `linedata_` _csv_ files are fields exported from the FEM solutions, while th
 
 Finally, `validate.jl` is a Julia script that compares the data stored in the `linedata_` files to the exact solutions and produce comparison plots.
 
-Note that to run `validte.jl` you will need to install the Julia [Plots package](https://docs.juliaplots.org/latest/).
+Note that to run `validate.jl` you will need to install the Julia [Plots package](https://docs.juliaplots.org/latest/).
 
 # Theoretical Model 
 Many equivalent formulations of the field radiated by a pulsating sphere exist. In the context of this post we will make use of the formulation presented in the first chapter of [Active Control of Sound](https://www.elsevier.com/books/active-control-of-sound/nelson/978-0-12-515425-3) by P.A. Nelson and S.J. Elliot, to which you can refer for more information, although similar derivations will be available for sure in many other books and websites. We will not derive the result, but just take the bits we need.
@@ -287,7 +287,7 @@ So, it will be clear to you that essentially our geometry is a big sphere with a
 We will now mesh our geometry. Open your Salome installation and follow the procedure below.
 
 * On the toolbar, you will see the _Modules_ combo box. Select the _Geometry_ module.
-* Select _File_ from the top menu, then _Import_ and then _BREP_. This will open the _Import BREP_ window. Select the _BREP_ file you exported when following the Geometry section.
+* Select _File_ from the top menu, then _Import_ and then _BREP_. This will open the _Import BREP_ window. Select the _BREP_ file you exported when following the **Geometry** section.
 * In the _Object Browser_ on the left you will see your newly imported object. Select it.
 * Select _New Entity_ from the top menu, and then _Explode_. This will open the _Sub-shapes Selection_ window. On the _Syb-shapes Type_ combo, select _Solid_. Then choose _Apply and Close_. This will create a new solid object under our original object tree.
 * Select the newly created solid object from the _Object Browser_ (expand the original object tree if necessary).
@@ -375,7 +375,7 @@ Open up ElmerGUI by typing `ElmerGUI` in the terminal. Then, proceed as follows.
         * I suggest you also tick the box _Abort if the solution did not converge_, so that not ugly solution will be saved if the solver cannot converge.
         * Click on _Apply_.
     * Click on _OK_.
-* Select _Model_ from the the top menu, then _Equation_ then _Add_.
+* Select _Model_ from the the top menu, then _Material_ then _Add_.
     * Click the _Material library_ button.
         * Select _Air (room temperature)_.
         * Click _OK_.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ElmerFEM Model and Solver Parameters"
-date:   2020-03-07 20:00:00 +0100
+date:   2020-03-14 20:00:00 +0100
 categories: science physics opensource
 ---
 
