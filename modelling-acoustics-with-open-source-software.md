@@ -13,3 +13,4 @@ This page contains links to all the articles in the **Modelling Acoustics with O
 5. [Refining the Metal Bar Model](https://crocoduckoducks.github.io/science/physics/opensource/2020/02/15/refining-the-metal-bar-model.html)
 6. [The Pulsating Sphere](https://crocoduckoducks.github.io/science/physics/opensource/2020/03/07/pulsating-sphere.html)
 7. [Rigid Walled Room](https://crocoduckoducks.github.io/science/physics/opensource/2020/03/28/rigid-walled-room.html)
+8. [Intro to ParaView](https://crocoduckoducks.github.io/science/physics/opensource/2020/04/11/intro-to-paraview.html)
