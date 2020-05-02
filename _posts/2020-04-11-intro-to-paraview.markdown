@@ -193,6 +193,18 @@ Where you will have to replace `avi_anim.avi` to your actual _avi_ file name, `r
 
 Finally, you can save the ParaView state by going to _File_ > _Save State_. This will save a _pvsm_ file containing all of your work. If you want to load it into another ParaView session, go to _File_ > _Load State_. If the location of your dataset files is changed, you will be given option to find them again when loading.
 
+## Exporting the Camera Position
+
+Maybe you have one study of one system, and you postprocess it with ParaView. But then, you do another study of the same system, and want to postprocess it in a similar way, and make an animation from the same point of view. You can save the camera settings from one ParaView session and import them into another Paraview session.
+
+To do so, click the _Adjust Camera_ button as shown below.
+
+![Adjust Camera]({{ site.baseurl }}/res/pictures/2020-04-11-intro-to-paraview/Figure_17.png  "Adjust Camera")
+
+The options to save and load the camera settings will be available in the window that will pop up, under _Camera Parameters_.
+
+![Adjust Camera Window]({{ site.baseurl }}/res/pictures/2020-04-11-intro-to-paraview/Figure_18.png  "Adjust Camera Window")
+
 # Conclusion
 
 This clearly was not an exhaustive guide on how to use ParaView, but it contains most of the things I find myself doing most of the time. I will update it with new tricks here and there. Insofar as the series in concerned, this post can serve as a quick reference for common ParaView hacks and links to the documentation.
