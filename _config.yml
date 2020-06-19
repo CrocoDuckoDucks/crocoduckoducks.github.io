@@ -1,27 +1,2 @@
-title: The CrocoDuck's Pond
-email: crocoduck.oducks@gmail.com
-description: >-
-  All about Linux, Open Source and Acoustics.
-baseurl: "/"
-url: "https://crocoduckoducks.github.io/"
-
-# Build settings
-markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
 
-header_pages:
-  - bio.md
-  - publications.md
-
-minima:
-  social_links:
-    github: crocoduckoducks
-    linkedin: stefanotronci90
-
-    youtube_channel: UCe_hA3f_goZNa7Si4ES_viw
-
-google_analytics: UA-142594496-1
-
-show_excerpts: true
